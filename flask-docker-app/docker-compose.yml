@@ -4,11 +4,20 @@ services:
   web:
     build: .
     ports:
-      - "5001:5001"
+      - "5001:5001"   # host:container
     depends_on:
       - redis
+      - postgres
     environment:
       - REDIS_HOST=redis
+      - DB_HOST=postgres
 
   redis:
     image: redis
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
