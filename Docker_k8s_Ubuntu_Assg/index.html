@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Demo Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0d6efd;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DevOps Project: HTML → Docker → Kubernetes</h1>
+        <p>End-to-End Deployment of a Static Web Application</p>
+    </header>
+
+    <section>
+        <h2>Project Overview</h2>
+        <p>
+            This project demonstrates how to build, containerize, and deploy a simple static web application
+            using modern DevOps tools and practices.
+        </p>
+    </section>
+
+    <section>
+        <h2>Step 1: Create Static Web Application</h2>
+        <ul>
+            <li>Develop a basic HTML web page</li>
+            <li>Ensure content loads correctly in browser</li>
+            <li>No backend required (pure static content)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Step 2: Containerization using Docker</h2>
+        <ul>
+            <li>Create a Dockerfile using Nginx base image</li>
+            <li>Copy HTML files into Nginx web directory</li>
+            <li>Build Docker image</li>
+            <li>Run container locally</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Step 3: Test Locally</h2>
+        <ul>
+            <li>Run container using Docker</li>
+            <li>Access application via localhost</li>
+            <li>Verify correct rendering</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Step 4: Push to Docker Hub</h2>
+        <ul>
+            <li>Tag Docker image</li>
+            <li>Login to Docker Hub</li>
+            <li>Push image to remote repository</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Step 5: Setup Kubernetes Cluster</h2>
+        <ul>
+            <li>Use Minikube or any Kubernetes setup</li>
+            <li>Start cluster and verify nodes</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Step 6: Kubernetes Deployment</h2>
+        <ul>
+            <li>Create Deployment YAML</li>
+            <li>Define replicas and container image</li>
+            <li>Apply configuration using kubectl</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Step 7: Expose Application</h2>
+        <ul>
+            <li>Create Service YAML (NodePort)</li>
+            <li>Expose application externally</li>
+            <li>Alternatively use port forwarding</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Final Result</h2>
+        <p>
+            The application is successfully deployed on Kubernetes and accessible via browser,
+            demonstrating a complete DevOps workflow from development to deployment.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 DevOps Demo Project | Built with HTML, Docker & Kubernetes</p>
+    </footer>
+
+</body>
+
+</html>
